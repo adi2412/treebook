@@ -3,3 +3,12 @@
 <%= render 'form' %>
 
 <%= link_to 'Back', statuses_path %>
+
+<%
+#render renders a partial called form.
+#which is _form.html.erb
+#partials allow reuse of code, basically.
+#we are using form in new and edit.
+#instead of repeating the code you add a partial
+#you edit the form and both get updated together.
+%>
