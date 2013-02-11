@@ -23,5 +23,10 @@ class CustomRoutesTest < ActionDispatch::IntegrationTest
   	
   end
 
+  test "that a profile page works" do
+    get '/adi2412'
+    assert_response :success
+  end
+
 
 end

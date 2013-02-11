@@ -3,4 +3,11 @@ aditya:
  last_name: "Raisinghani"
  email: "aditya@blah.com"
  profile_name: "adi2412"
- encrypted_password: "blahness"
+ 
+
+utkarsh:
+ first_name: "Utkarsh"
+ last_name: "Verma"
+ email: "uv@gmail.com"
+ profile_name: "uv1234"
+ 
