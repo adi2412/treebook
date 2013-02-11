@@ -1,5 +1,5 @@
 class StatusesController < ApplicationController
-  before_filter :authenticate_user!, only: [:new]
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   #before code runs before any other code does.
   #this would authenticate the user before the code
   #runs.
