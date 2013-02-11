@@ -10,6 +10,17 @@ class User < ActiveRecord::Base
   					:first_name, :last_name, :profile_name
   # attr_accessible :title, :body
 
+
+  validates :first_name, presence: true
+
+  validates :last_name, presence: true
+  validates :profile_name, presence: true,
+                            uniqueness: true,
+                            format: {
+                              with: /a-zA-Z0-9_-/, #regular expression, to match strings of text
+                              message: 'Must be formatted correctly.'
+                            }
+
   has_many :statuses
   #rails itself understands that when use statuses,
   #there must be model called status, which has
